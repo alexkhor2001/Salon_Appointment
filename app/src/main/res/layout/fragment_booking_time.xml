@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearListHairdresser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imgHairdresserProfile"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginStart="14px"
+            android:contentDescription="hairdresser_photo"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_15408877569017"
+            tools:src="@drawable/img_15408877569017" />
+
+        <TextView
+            android:id="@+id/txtHairdresserName"
+            style="@style/txtRobotomedium20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33px"
+            android:layout_marginTop="100px"
+            android:layout_marginEnd="54px"
+            android:layout_marginBottom="53px"
+            android:layout_weight="0.33"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Khoo Kay Kai"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearListHairdresser"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="1/1/2022" />
+
+        <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="Pick Date" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookingTimeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearDatePicker"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

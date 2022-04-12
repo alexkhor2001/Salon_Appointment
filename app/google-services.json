@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "174103026403",
+    "firebase_url": "https://salon-appointment-c9514-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "salon-appointment-c9514",
+    "storage_bucket": "salon-appointment-c9514.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174103026403:android:0ef42d85ad297ed3ee03d6",
+        "android_client_info": {
+          "package_name": "com.example.salon_appointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174103026403-q0lglb3dq3ufqbugvqbegcna5plesg98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvTHcSRIeB_IhvcyTMYkI6DrUzRkkLews"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174103026403-q0lglb3dq3ufqbugvqbegcna5plesg98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

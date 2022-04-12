@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/choose_service">
+
+    <fragment
+        android:id="@+id/choose_service"
+        android:name="com.example.salon_appointment.choose_service"
+        android:label="fragment_choose_service"
+        tools:layout="@layout/fragment_choose_service">
+        <action
+            android:id="@+id/action_choose_service_to_booking_hairdresser"
+            app:destination="@id/booking_hairdresser" />
+    </fragment>
+    <fragment
+        android:id="@+id/booking_hairdresser"
+        android:name="com.example.salon_appointment.hairdresser.booking_hairdresser"
+        android:label="booking_hairdresser" >
+        <action
+            android:id="@+id/action_booking_hairdresser_to_booking_time"
+            app:destination="@id/booking_time" />
+        <action
+            android:id="@+id/action_booking_hairdresser_to_choose_service"
+            app:destination="@id/choose_service" />
+    </fragment>
+    <fragment
+        android:id="@+id/booking_time"
+        android:name="com.example.salon_appointment.booking_time"
+        android:label="booking_time" >
+        <action
+            android:id="@+id/action_booking_time_to_booking_hairdresser"
+            app:destination="@id/booking_hairdresser" />
+    </fragment>
+</navigation>
